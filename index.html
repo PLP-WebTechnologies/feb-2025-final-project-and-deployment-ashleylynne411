@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="A personal blog sharing insights on blogging and vlogs.">
+        <title>My Blog</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <!-- Header Section -->
+        <header>
+            <h1>Welcome to My Blog</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Main Content -->
+        <main>
+            <!-- Latest Blog Post -->
+            <article>
+                <h2>Latest Blog Post</h2>
+                <p>Here’s where your latest blog post content will be displayed.</p>
+            </article>
+
+            <!-- Section for Recent Blog Posts -->
+            <section id="blog-posts">
+                <h2>Recent Posts</h2>
+            </section>
+
+            <!-- Blog Post Input Form -->
+            <input type="text" id="post-title" placeholder="Post Title">
+            <textarea id="post-content" placeholder="Write your post..."></textarea>
+            <button id="add-post">Add Post</button>
+
+            <!-- Image Slider Section -->
+            <div class="slider">
+                <img src="https://images.pexels.com/photos/3098619/pexels-photo-3098619.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="slide active" alt="Blog Image 1">
+                <img src="https://images.pexels.com/photos/2002719/pexels-photo-2002719.jpeg?auto=compress&cs=tinysrgb&w=600" class="slide" alt="Blog Image 2">
+                <img src="https://images.pexels.com/photos/57690/pexels-photo-57690.jpeg?auto=compress&cs=tinysrgb&w=600" class="slide" alt="Blog Image 3">
+                <!-- Navigation Buttons for Slider -->
+                <button id="prev">❮</button>
+                <button id="next">❯</button>
+            </div>
+
+            <!-- Link to JavaScript File -->
+            <script src="script.js"></script>
+        </main>
+
+        <!-- Footer Section -->
+        <footer>
+            <p>© 2025 My Blog</p>
+        </footer>
+    </body>
+</html>
+

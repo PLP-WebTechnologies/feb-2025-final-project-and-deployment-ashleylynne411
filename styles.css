@@ -1,0 +1,129 @@
+/* Global Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Smooth Fade-in Animation */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Header Styling */
+header {
+    background: darkcyan;
+    color: white;
+    padding: 20px;
+}
+
+/* Navigation Bar */
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+/* Responsive Navigation */
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+    }
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+}
+
+/* Button Styling */
+button {
+    background-color: chocolate;
+    color: beige;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: gold;
+}
+
+/* Image Slider */
+.slider {
+    position: relative;
+    width: 80%;
+    margin: auto;
+    overflow: visible;
+}
+
+.slide {
+    width: 100%;
+    position: absolute;
+    transition: transform 0.5s ease-in-out;
+    opacity: 0;
+}
+
+.slide.active {
+    opacity: 1;
+}
+
+/* Blog Post Styling */
+.post {
+    background: #f4f4f4;
+    padding: 15px;
+    margin: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.post:hover {
+    transform: translateY(-5px);
+}
+
+/* Scroll-to-Top Button */
+#scrollTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: black;
+    color: white;
+    padding: 12px;
+    border: none;
+    cursor: pointer;
+    display: none;
+    font-size: 14px;
+}
+
+#scrollTop:hover {
+    background-color: gold;
+}
+
+.slider img {
+    width: 100%;
+    height: auto;
+    object-fit: contain; /* Ensures the full image fits */
+}
+
+.slider {
+    position: relative;
+}
+.slide {
+    position: relative;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
